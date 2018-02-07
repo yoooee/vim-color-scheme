@@ -30,6 +30,7 @@ call s:highlight("LineNr", 15, 240, "NONE")
 call s:highlight("jsFunction", green, "NONE", "NONE")
 call s:highlight("jsReturn", yellow, "NONE", "NONE")
 call s:highlight("jsFuncArgs", orange, "NONE", "NONE")
+call s:highlight("jsConditional", orange, "NONE", "NONE")
 
 " Typescript
 call s:highlight("typescriptStringS", 75, "NONE", "NONE")
