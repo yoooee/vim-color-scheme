@@ -105,10 +105,14 @@ cal <sid>h('cssPagingProp', '', '', Dark_Blue, '', '', '')
 cal <sid>h('cssFontProp', '', '', Dark_Blue, '', '', '')
 cal <sid>h('cssTextProp', '', '', Dark_Blue, '', '', '')
 cal <sid>h('cssTagName', '', '', Purple, '', '', '')
+cal <sid>h('cssDimensionProp', '', '', Dark_Blue, '', '', '')
+cal <sid>h('cssBoxProp', '', '', Dark_Blue, '', '', '')
+cal <sid>h('cssUnitDecorators', '', '', Dark_Blue, '', '', '')
 
 " SCSS
 cal <sid>h('scssSelectorName', '', '', Purple, '', '', '')
 cal <sid>h('scssSelectorChar', '', '', White, '', '', '')
+cal <sid>h('scssDefinition', '', '', Dark_Blue, '', '', '')
 cal <sid>h('scssProperty', '', '', Dark_Blue, '', '', '')
 cal <sid>h('scssAttribute', '', '', White, '', '', '')
 
