@@ -22,9 +22,12 @@ let white = 15
 let yellow = 220
 let orange = 208
 let green = 118
+let grey = 238
 
 call s:highlight("Normal", 255, 234, "NONE")
 call s:highlight("LineNr", 15, 240, "NONE")
+call s:highlight("CursorLine", "NONE", grey, "NONE")
+call s:highlight("CursorColumn", white, light_blue, "NONE")
 
 " JavaScript
 call s:highlight("jsFunction", green, "NONE", "NONE")
