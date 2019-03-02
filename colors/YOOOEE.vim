@@ -228,3 +228,7 @@ cal <sid>h('jsonNoQuotesError', hexGrey, '', '', Grey, '', '')
 
 " Git
 cal <sid>h('DiffAdd', hexYellow, '', Yellow, '', '', '')
+
+" PMenu
+cal <sid>h('Pmenu', hexWhite, hexGrey, White, Grey, '', '')
+cal <sid>h('PmenuSel', hexWhite, hexDark_Blue, White, Dark_Blue, '', '')
