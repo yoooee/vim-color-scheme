@@ -83,6 +83,35 @@ cal <sid>h('NERDTreeCWD', hexOrange, '', Orange, '', '', '')
 cal <sid>h('Folded', hexGrey, hexDark_Grey, Grey, Dark_Grey, '', '')
 cal <sid>h('EndOfBuffer', hexGrey, hexDark_Grey, Grey, Dark_Grey, '', '')
 
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('md', White, 'none', '#'.hexWhite, '#'.hexDark_Grey)
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('json', White, 'none', '#'.hexWhite, '#'.hexDark_Grey)
+call NERDTreeHighlightFile('html', White, 'none', '#'.hexWhite, '#'.hexDark_Grey)
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('css', White, 'none', '#'.hexWhite, '#'.hexDark_Grey)
+call NERDTreeHighlightFile('scss', White, 'none', '#'.hexWhite, '#'.hexDark_Grey)
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('js', White, 'none', '#'.hexWhite, '#'.hexDark_Grey)
+call NERDTreeHighlightFile('ts', White, 'none', '#'.hexWhite, '#'.hexDark_Grey)
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('ds_store', 'Gray', 'none', '#686868', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('gitconfig', 'Gray', 'none', '#686868', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#686868', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('bashrc', 'Gray', 'none', '#686868', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#'.hexDark_Grey)
+call NERDTreeHighlightFile('spec.ts', White, 'none', '#'.hexWhite, '#'.hexDark_Grey)
+call NERDTreeHighlightFile('angular.json', White, 'none', '#'.hexWhite, '#'.hexDark_Grey)
+
 " Vim
 cal <sid>h('vimLineComment', hexGrey, '', Grey, '', '', '')
 cal <sid>h('vimComment', hexGrey, '', Grey, '', '', '')
